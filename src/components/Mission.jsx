@@ -1,6 +1,6 @@
 // Mission.jsx
 import React from "react";
-
+import logoImg from "../assets/logo.jpg"; 
 const Mission = () => {
   return (
     <section className="mission" id="about">
@@ -8,7 +8,7 @@ const Mission = () => {
         <div className="mission-grid">
           <div className="mission-logo">
             <img 
-              src="https://lh3.googleusercontent.com/sitesv/AAzXCkco5sXuyedZfm-8Zla9u3KGJ3J2waZQT112urk8y3bRMCcAr0TYNsBU1FC9B0gPU6AwGMzS82wuLA6Kg0s2LiW_ZYewJQvQPU0wcNnZZWipR30VOF-bt9UTxarZDMlI6-wMqR0fz_Z2IZXrbAnonYefiOzIZL66tTrcM-rA6MZNHCRrk4zT43Fxvhmr7jk7BV_wWc5_j97Y_fO5sC2M--1fmJaIEIHSIueeTaM=w1280" 
+              src={logoImg}
               alt="Legacy Hands of Hope Logo"
             />
           </div>

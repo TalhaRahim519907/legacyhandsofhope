@@ -1,5 +1,6 @@
 // Header.jsx
 import React, { useState } from "react";
+import logoImg from "../assets/logo.jpg"; // apna logo path
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -16,7 +17,8 @@ const Header = () => {
     <header>
       <nav>
         <div className="logo">
-          <div className="logo-icon"></div>
+          {/* Logo Image */}
+          <img src={logoImg} alt="Legacy Hands of Hope" className="logo-icon" />
           <span className="logo-text">Legacy Hands of Hope</span>
         </div>
 

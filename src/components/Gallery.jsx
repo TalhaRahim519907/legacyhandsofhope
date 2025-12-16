@@ -1,16 +1,17 @@
 // Gallery.jsx
 import React from "react";
-
+import roseImg from "../assets/Rose-fest.jpg";
+import lhohImg from "../assets/LHOH-Webiste-Gallery.jpg";
 const Gallery = () => {
   const galleryItems = [
     {
-      img: "https://lh3.googleusercontent.com/sitesv/AAzXCkf3nLesokRyCQYcM3ZK-FVDkn36mZqK-WH5hKg6pyxJp9h5dnEmZOi-re2aZ1yTe_bK405hC8V2lhrkyyG85to7Byi_4q7Aj1q3XN9zJrWmbp0x1O60ii3unegaJAUdmEC6kvLUzUY9a-N_NJbtp4XeTu62_XJuIZGFypWdPQDwdgGdthhgOlrubyf9p532nRvLHAfFcYPDJjX4VBWDB2kFUvqnAPXnx4Lv2iw=w1280",
+      img: roseImg,
       link: "https://photos.app.goo.gl/vygpiX4JMMcqbbZc6",
       alt: "Rose Fest",
       text: "View Rose Fest Pics →"
     },
     {
-      img: "https://lh3.googleusercontent.com/sitesv/AAzXCkdHao_w7RN28XbVPLjbusnBgBcdc17fgh3JeaAZXxRFqTqxnzCfc3AbQr71Gp4tF41Rh4FWPiY721gJrcDA8-pdqMQMoSifQUapMJswdKfmCoJM7cXVH9QRSPOVNvRWu7Ywt_rsnK8e-mVOIn7qhyr9bEetDgMbfxbtogFuNOyny-oH7mupvn89=w1280",
+      img: lhohImg,
       link: "https://collinsasenso.pixieset.com/lhohwebsite/",
       alt: "LHOH Website Gallery",
       text: "View Gallery →"

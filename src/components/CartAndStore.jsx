@@ -1,24 +1,66 @@
 import React, { useState, useEffect } from "react";
+import blueTShirtImg from "../assets/BLUE LHOH T-SHIRTS.webp";
+import greenImg from "../assets/GREEN LHOH T-SHIRTS.webp";
+import braceletImg from "../assets/LHOH King Bracelet.webp";
+import queenbraceletImg from "../assets/LHOH Queen Bracelet.webp";
+import whiteTshirtImg from "../assets/WHITE LHOH T-SHIRTS.webp";
+import shippingImg from "../assets/SHIPPING FEE.webp";
 
 // Static products data
 const productsData = [
   {
     id: 1,
-    name: "LHOH Classic T-Shirt",
+    name: "BLUE LHOH T-SHIRTS",
     category: "apparel",
-    price: 29.99,
+    price: 30,
     description: "Premium cotton t-shirt with LHOH logo",
-    image: "https://via.placeholder.com/300x300/2563eb/ffffff?text=LHOH+T-Shirt",
+    image: blueTShirtImg,
     badge: "Popular",
   },
   {
     id: 2,
-    name: "Hope Hoodie",
+    name: "GREEN LHOH T-SHIRTS",
     category: "apparel",
-    price: 54.99,
+    price: 30,
     description: "Comfortable hoodie with inspiring message",
-    image: "https://via.placeholder.com/300x300/10b981/ffffff?text=Hope+Hoodie",
+    image: greenImg,
     badge: "New",
+  },
+    {
+    id: 3,
+    name: "LHOH King Bracelet",
+    category: "apparel",
+    price: 30,
+    description: "A bold and stylish men's bracelet",
+    image: braceletImg,
+    badge: "Popular",
+  },
+    {
+    id: 4,
+    name: "LHOH Queen Bracelet",
+    category: "apparel",
+    price: 30,
+    description: "waterproof and tarnish-free.",
+    image: queenbraceletImg,
+    badge: "Popular",
+  },
+    {
+    id: 5,
+    name: "WHITE LHOH T-SHIRTS",
+    category: "apparel",
+    price: 30,
+    description: "Comfortable hoodie with inspiring message",
+    image: whiteTshirtImg,
+    badge: "New",
+  },
+   {
+    id: 6,
+    name: "SHIPPING FEE",
+    category: "apparel",
+    price: 11.95,
+    description: "Add this item if you'd like us to ship your order. USPS Standard shipping",
+    image: shippingImg,
+    // badge: "New",
   },
   // ... add the rest of your products here
 ];

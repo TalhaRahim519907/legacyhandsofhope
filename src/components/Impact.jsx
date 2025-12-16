@@ -1,5 +1,9 @@
 // Impact.jsx
 import React from "react";
+import africanImg from "../assets/african-dispora.png";
+import caribbeanImg from "../assets/caribbean-Diaspora.png";
+import urbanImg from "../assets/urban-communities.png";
+
 
 const Impact = () => {
   return (
@@ -12,7 +16,7 @@ const Impact = () => {
         <div className="impact-grid">
           <div className="impact-card">
             <img 
-              src="https://lh3.googleusercontent.com/sitesv/AAzXCkfmF2he5cdbyMu0l9niZp1JlAmKnhrB5i0uE2_nsWnSPqtYBlSiPL56e3Ts1sgICLQvaaaNTesHIglPVm2tZMM8fC8onIrHMbQcXyGCUSoEO6kt8YTerpj-c_RXUzhN6PF9Wuktv1WxFCFcqGVwVjC-ZWdmi1CzC2XjneMz4-GvOqnJxCyIWtHA709HFhfRHYRQiXdBRzo1EnXVzJLW4qFZf5vjcT3noQ-GwrI=w1280" 
+              src={africanImg}
               alt="Urban Communities" 
               className="impact-card-image"
             />
@@ -26,7 +30,7 @@ const Impact = () => {
 
           <div className="impact-card">
             <img 
-              src="https://lh3.googleusercontent.com/sitesv/AAzXCkf3EkTw7D_S0vqL30Lmn7JaxZEcx5lGaNzHSBd34g-oNBUZhZQYx7rRl70eqlEqxIVCHy2fEtwmeMD16t2wGilU7HZjpbRlJiL2bPjkLJ_14e1fOFv8QCOA4gV2PlXa2AoVUxm7fPy6UeAbQCF3IsUkOojfjFbdNeMJCvUmT6IEDV5hLGqrwIw1iXkYf3v7nfaq7OiKet4Ghypo0aG4tq2wdBI5-vN8TXYf=w1280" 
+              src={caribbeanImg}
               alt="Caribbean Diaspora" 
               className="impact-card-image"
             />
@@ -40,7 +44,7 @@ const Impact = () => {
 
           <div className="impact-card">
             <img 
-              src="https://lh3.googleusercontent.com/sitesv/AAzXCkdgrUsd88gNBVKMGVoJzArzeqd8mrfxpnDaJvS2M43bziS6Sqy2uUilqfvLy84DWCK7nULlqH51nkzfX452UcqZYtZ3BGiF-Q8lkOl9hUgM3RANL4ki1-rRaTC8M2utqluXBRsQol0JL1qtIeNNF8TvjfMvT_-aP4xYHF-tKsYwneDF9VA5yzI9gh9tBwRBms6HJr43JpRqEzIPF0Zxdsre4i9oZ559o9dbC1s=w1280" 
+              src={urbanImg}
               alt="African Diaspora" 
               className="impact-card-image"
             />
