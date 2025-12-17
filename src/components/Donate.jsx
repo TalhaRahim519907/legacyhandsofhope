@@ -11,9 +11,8 @@ const Donate = () => {
           and creating lasting change in the African and Caribbean diaspora.
         </p>
         <a
-          href="https://sites.google.com/view/legacyhandsofhope/give"
+          href="/give"
           className="donate-btn"
-          target="_blank"
           rel="noopener noreferrer"
         >
           DONATE NOW

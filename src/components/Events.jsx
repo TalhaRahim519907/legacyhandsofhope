@@ -15,7 +15,7 @@ const Events = () => {
     },
     {
       img: merchandiseImg,
-      link: "https://sites.google.com/view/legacyhandsofhope/give",
+      link: "#store",
       btnText: "SHOP NOW",
       alt: "Merchandise"
     }

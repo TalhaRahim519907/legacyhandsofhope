@@ -16,7 +16,7 @@ const Impact = () => {
         <div className="impact-grid">
           <div className="impact-card">
             <img 
-              src={africanImg}
+              src={urbanImg}
               alt="Urban Communities" 
               className="impact-card-image"
             />
@@ -44,7 +44,7 @@ const Impact = () => {
 
           <div className="impact-card">
             <img 
-              src={urbanImg}
+              src={africanImg}
               alt="African Diaspora" 
               className="impact-card-image"
             />
