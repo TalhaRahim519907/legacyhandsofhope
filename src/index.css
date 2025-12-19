@@ -1455,7 +1455,7 @@
             .hero-tagline { font-size: 1rem; }
             .section-title { font-size: 1.8rem; }
             .mission, .impact, .happening, .events, .gallery, .store, .support-mission { 
-                padding: 60px 1rem; 
+                padding: 120px 1rem; 
             }
             .donate { padding: 60px 1rem; }
             footer { padding: 40px 1rem 20px; }

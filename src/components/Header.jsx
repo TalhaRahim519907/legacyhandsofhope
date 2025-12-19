@@ -1,44 +1,51 @@
-// Header.jsx
-import React, { useState } from "react";
-import logoImg from "../assets/logo.jpg"; // apna logo path
+import React, { useState, useEffect } from "react";
+import "./Header.css";
+import logo from "../assets/About_Logo-removebg-preview.png";
 
-const Header = () => {
-  const [menuActive, setMenuActive] = useState(false);
+function Header() {
+  const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
-  };
-
-  const closeMenu = () => {
-    setMenuActive(false);
-  };
+  // Body scroll lock when menu is open
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "auto";
+  }, [open]);
 
   return (
-    <header>
-      <nav>
-        <a href="/">
-        <div className="logo">
-          {/* Logo Image */}
-          <img src={logoImg} alt="Legacy Hands of Hope" className="logo-icon" />
-          <span className="logo-text">Legacy Hands of Hope</span>
-          
+    <>
+      <header className="header">
+        <div className="nav-container">
+          {/* Logo + Heading */}
+          <a href="/" className="logo" onClick={() => setOpen(false)}>
+            <img src={logo} alt="Logo" />
+            <span className="logo-text">Legacy Hands of Hope</span>
+          </a>
+
+          {/* Hamburger */}
+          <button
+            className={`hamburger ${open ? "open" : ""}`}
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle Menu"
+          >
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
+
+          {/* Nav Menu */}
+          <ul className={`nav-menu ${open ? "show" : ""}`}>
+            <li><a href="/" onClick={() => setOpen(false)}>Home</a></li>
+            <li><a href="/mission" onClick={() => setOpen(false)}>About</a></li>
+            <li><a href="#events" onClick={() => setOpen(false)}>Events</a></li>
+            <li><a href="/give" onClick={() => setOpen(false)}>Give</a></li>
+            <li><a href="/team" onClick={() => setOpen(false)}>Team</a></li>
+          </ul>
         </div>
-        </a>
+      </header>
 
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
-
-        <ul className={`nav-links ${menuActive ? "active" : ""}`}>
-          <li><a href="/" onClick={closeMenu}>Home</a></li>
-          <li><a href="/mission" onClick={closeMenu}>About</a></li>
-          <li><a href="/events" onClick={closeMenu}>Events</a></li>
-          <li><a href="/give" onClick={closeMenu}>Give</a></li>
-          <li><a href="/team" onClick={closeMenu}>Team</a></li>
-        </ul>
-      </nav>
-    </header>
+      {/* Overlay */}
+      {open && <div className="overlay" onClick={() => setOpen(false)} />}
+    </>
   );
-};
+}
 
 export default Header;

@@ -19,6 +19,7 @@ import SupportMission from "./components/SupportMission"; // ✅ IMPORTANT
 // Pages
 import Give from "./pages/give";
 import Team from "./pages/team";
+import EventsPage from "./pages/EventsPage";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -103,6 +104,8 @@ function App() {
             {/* <Route path="/about" element={<Mission />} /> */}
             <Route path="/mission" element={<Mission />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/event" element={<EventsPage />} />
+
             <Route path="/team" element={<Team />} />
           </Routes>
         </main>

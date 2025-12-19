@@ -16,7 +16,7 @@ const supportOptions = [
     title: "Monthly Giving",
     description:
       "Become a sustaining partner with recurring monthly donations to create lasting change.",
-    link: "https://sites.google.com/view/legacyhandsofhope/give",
+    link: "/give",
     linkText: "Join Monthly",
     external: true,
   },
@@ -34,7 +34,7 @@ const supportOptions = [
     title: "Volunteer",
     description:
       "Join our team of dedicated volunteers and directly impact the communities we serve.",
-    link: "mailto:LegacyHandsofHope@gmail.com?subject=Volunteer Inquiry",
+    link: "/team",
     linkText: "Get Involved",
     external: true,
   },

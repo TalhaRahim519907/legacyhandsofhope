@@ -1,6 +1,6 @@
 // Mission.jsx
 import React from "react";
-import logoImg from "../assets/logo.jpg"; 
+import logoImg from "../assets/About_Logo-removebg-preview.png"; 
 const Mission = () => {
   return (
     <section className="mission" id="about">
