@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "start": "npx serve -s build -l 8080"
+    "start": "npx serve -s build -l $PORT"
   },
   "eslintConfig": {
     "extends": [
