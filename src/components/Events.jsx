@@ -5,11 +5,12 @@ import merchandiseImg from "../assets/Merchandise.jpg";
 
 
 
+
 const Events = () => {
   const events = [
     {
       img: christmasImg,
-      link: "https://sites.google.com/view/legacyhandsofhope/events",
+      link: "/EventsPage",
       btnText: "PURCHASE TIX",
       alt: "Christmas Fundraising Gala"
     },

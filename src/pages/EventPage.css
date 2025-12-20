@@ -1,15 +1,4 @@
-  :root {
-            --primary-blue: #2563eb;
-            --primary-green: #10b981;
-            --accent-teal: #14b8a6;
-            --dark-navy: #0f172a;
-            --warm-white: #fefefe;
-            --soft-gray: #f8fafc;
-            --text-dark: #1e293b;
-            --text-light: #64748b;
-        }
-
-        * {
+  * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -24,7 +13,7 @@
         /* Page Title */
         .page-title {
             text-align: center;
-            padding: 3rem 2rem 2rem;
+            padding: 7rem 2rem 2rem;
             background: var(--warm-white);
         }
 
@@ -57,6 +46,7 @@
             width: 100%;
             height: auto;
             display: block;
+            margin-bottom: 50px;
         }
 
         /* Event Card */
@@ -208,7 +198,7 @@
         /* Mission Trip Banner */
         .mission-banner {
             width: 100%;
-            margin: 3rem 0;
+            margin: 6rem 0;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -381,7 +371,11 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
-
+        .event-card img {
+            height: 230px;
+            object-fit: contain;
+            width: 100%;
+        }
         .qty-btn:hover {
             background: #1d4ed8;
             transform: scale(1.1);
