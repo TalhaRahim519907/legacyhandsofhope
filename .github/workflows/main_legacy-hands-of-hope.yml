@@ -61,5 +61,6 @@ jobs:
         with:
           app-name: 'legacy-hands-of-hope'
           slot-name: 'Production'
-          package: .
+          package: build
+
           
