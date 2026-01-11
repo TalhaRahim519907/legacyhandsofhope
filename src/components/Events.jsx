@@ -16,7 +16,7 @@ const Events = () => {
     },
     {
       img: merchandiseImg,
-      link: "#store",
+      link: "/store",
       btnText: "SHOP NOW",
       alt: "Merchandise"
     }

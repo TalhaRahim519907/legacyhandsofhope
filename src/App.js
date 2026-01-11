@@ -12,13 +12,14 @@ import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Donate from "./components/Donate";
 import Footer from "./components/Footer";
-import Store from "./components/Store";
 import CartModal from "./components/CartModel";
-import SupportMission from "./components/SupportMission"; // ✅ IMPORTANT
+import SupportMission from "./components/SupportMission";
+import PastFundRaising from "./components/PastFundRaising";
 
 // Pages
 import Give from "./pages/give";
 import Team from "./pages/team";
+import Store from "./pages/Store";
 import EventsPage from "./pages/EventsPage";
 
 function App() {
@@ -88,12 +89,8 @@ function App() {
                   <Events />
                   <Gallery />
                   <SupportMission/>
-                  {/* ✅ STORE */}
-                  <Store
-                    cart={cart}
-                    addToCart={addToCart}
-                    openCart={openCart}
-                  />
+                  <PastFundRaising />
+                  
 
                   <Donate />
                 </>
@@ -104,8 +101,17 @@ function App() {
             {/* <Route path="/about" element={<Mission />} /> */}
             <Route path="/mission" element={<Mission />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/EventsPage" element={<EventsPage />} />
-
+            <Route
+  path="/EventsPage"
+  element={
+    <EventsPage cart={cart} addToCart={addToCart} openCart={openCart} />
+  }
+/>
+            <Route path="/store" element={<Store
+                    cart={cart}
+                    addToCart={addToCart}
+                    openCart={openCart}
+                  />} />
             <Route path="/team" element={<Team />} />
           </Routes>
         </main>

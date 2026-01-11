@@ -1,20 +1,19 @@
-// Gallery.jsx
 import React from "react";
-// import roseImg from "../assets/Rose-fest.jpg";
-import lhohImg from "../assets/LHOH-Webiste-Gallery.jpg";
-const Gallery = () => {
+import rosepastImg from "../assets/rose-past.jpeg";
+import galapast from "../assets/gala-past.jpeg";
+const PastFundRaising = () => {
   const galleryItems = [
-    // {
-    //   img: roseImg,
-    //   link: "https://photos.app.goo.gl/vygpiX4JMMcqbbZc6",
-    //   alt: "Rose Fest",
-    //   text: "View Rose Fest Pics →"
-    // },
     {
-      img: lhohImg,
+      img: rosepastImg,
+      link: "https://photos.app.goo.gl/vygpiX4JMMcqbbZc6",
+      alt: "Rose Fest",
+      text: "Rose Fest Fund Raising Events →"
+    },
+    {
+      img: galapast,
       link: "https://collinsasenso.pixieset.com/lhohwebsite/",
       alt: "LHOH Website Gallery",
-      text: "View Gallery →"
+      text: "Christmas Fund Raising Gala →"
     }
   ];
 
@@ -22,9 +21,9 @@ const Gallery = () => {
     <section className="gallery">
       <div className="section-container">
         <h2 className="section-title" style={{ textAlign: "center" }}>
-          OUR IMPACT IN ACTION
+          PAST FUND-RAISING EVENTS 
         </h2>
-        <div className="gallery-grid-g">
+        <div className="gallery-grid">
           {galleryItems.map((item, index) => (
             <div className="gallery-card" key={index}>
               <img src={item.img} alt={item.alt} />
@@ -39,4 +38,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default PastFundRaising;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import products from "./products";
-import ProductCard from "./ProductCard";
-import FloatingCart from "./FloatingCart";
+import products from "../components/products";
+import ProductCard from "../components/ProductCard";
+import FloatingCart from "../components/FloatingCart";
 
 const Store = ({ cart, addToCart, openCart }) => {
   const [filter, setFilter] = useState("all");

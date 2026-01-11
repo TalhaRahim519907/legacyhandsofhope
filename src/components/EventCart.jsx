@@ -52,7 +52,7 @@ const CartModal = ({
           <div id="cartView">
             <div className="cart-header">
               <h2>Shopping Cart</h2>
-              <span className="close-cart" onClick={closeCart}>
+              <span className="close-cart-circle" onClick={closeCart}>
                 ×
               </span>
             </div>
@@ -116,7 +116,7 @@ const CartModal = ({
           <div id="checkoutView">
             <div className="cart-header">
               <h2>Checkout</h2>
-              <span className="close-cart" onClick={closeCart}>
+              <span className="close-cart-circle" onClick={closeCart}>
                 ×
               </span>
             </div>

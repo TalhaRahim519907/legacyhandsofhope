@@ -3,7 +3,7 @@ import React from "react";
 
 const supportOptions = [
   {
-    icon: "💝",
+   icon: "💙",
     title: "One-Time Donation",
     description:
       "Make a direct impact with a one-time contribution to support our programs and initiatives.",
@@ -25,7 +25,7 @@ const supportOptions = [
     title: "Shop Merchandise",
     description:
       "Purchase LHOH merchandise and apparel. 100% of proceeds support our mission.",
-    link: "#store",
+    link: "/store",
     linkText: "Shop Now",
     external: false,
   },
@@ -34,7 +34,7 @@ const supportOptions = [
     title: "Volunteer",
     description:
       "Join our team of dedicated volunteers and directly impact the communities we serve.",
-    link: "/team",
+    link: "https://www.zeffy.com/en-US/ticketing/legacy-hands-of-hopes-memberships",
     linkText: "Get Involved",
     external: true,
   },

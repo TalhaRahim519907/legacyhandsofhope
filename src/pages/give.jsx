@@ -87,17 +87,30 @@ You will receive a confirmation email at ${formData.email}.
             </div>
 
             {/* Amount Options */}
-            <div className="amount-grid">
-              {[50, 100, 300, 500].map((val) => (
-                <div
-                  key={val}
-                  className={`amount-option ${amount === val ? "active" : ""}`}
-                  onClick={() => setAmount(val)}
-                >
-                  ${val}
-                </div>
-              ))}
-            </div>
+           <div className="amount-grid">
+  {[50, 100, 300, 500].map((val) => (
+    <div
+      key={val}
+      className={`amount-option ${amount === val ? "active" : ""}`}
+      onClick={() => setAmount(val)}
+    >
+      ${val}
+    </div>
+  ))}
+
+  {/* Custom Amount Box */}
+  <div className={`amount-option custom ${![50,100,300,500].includes(amount) ? "active" : ""}`}>
+    $
+    <input
+      type="number"
+      min="1"
+      placeholder="Custom"
+      value={! [50,100,300,500].includes(amount) ? amount : ""}
+      onChange={(e) => setAmount(Number(e.target.value))}
+    />
+  </div>
+</div>
+
 
             {/* Selected Amount */}
             <div className="selected-amount">

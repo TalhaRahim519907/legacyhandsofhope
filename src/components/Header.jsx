@@ -37,6 +37,10 @@ function Header() {
             <li><a href="/mission" onClick={() => setOpen(false)}>About</a></li>
             <li><a href="/EventsPage" onClick={() => setOpen(false)}>Events</a></li>
             <li><a href="/give" onClick={() => setOpen(false)}>Give</a></li>
+
+            {/* ✅ Store link added */}
+            <li><a href="/store" onClick={() => setOpen(false)}>Store</a></li>
+
             <li><a href="/team" onClick={() => setOpen(false)}>Team</a></li>
           </ul>
         </div>

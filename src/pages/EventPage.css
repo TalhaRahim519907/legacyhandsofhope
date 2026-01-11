@@ -56,7 +56,9 @@
             border-radius: 20px;
             padding: 3rem;
             margin-bottom: 3rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2); */
+             transform: none !important;  /* no movement */
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* no shadow changes */
         }
 
         .event-card h2 {
@@ -208,7 +210,7 @@
 
         .mission-banner img {
             width: 100%;
-            height: auto;
+            height: 50vh;
             display: block;
             border-radius: 16px;
         }
@@ -371,11 +373,11 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
-        .event-card img {
+        /* .event-card img {
             height: 230px;
             object-fit: contain;
             width: 100%;
-        }
+        } */
         .qty-btn:hover {
             background: #1d4ed8;
             transform: scale(1.1);
@@ -385,6 +387,24 @@
             font-weight: 700;
             font-size: 1.1rem;
         }
+.close-cart-circle {
+    width: 35px;             /* circle size */
+    height: 35px;
+    background-color: #ffffff; /* red color */
+    color: rgb(0, 0, 0);
+    border-radius: 50%;      /* makes it a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers × perfectly */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-cart-circle:hover {
+    background-color: #dc2626; /* darker red on hover */
+    transform: scale(1.1);
+}
 
         .remove-item {
             color: #ef4444;

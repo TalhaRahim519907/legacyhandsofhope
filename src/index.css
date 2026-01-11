@@ -159,6 +159,10 @@
 
 
       /* Hero Section */
+      .hero {
+  transition: background-image 1s ease-in-out;
+}
+
 .hero {
   margin-top: 85px;
   height: 90vh;
@@ -590,9 +594,15 @@
             background: var(--warm-white);
         }
 
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 4rem auto 0;
+        }
+        .gallery-grid-g{
             gap: 2rem;
             max-width: 1200px;
             margin: 4rem auto 0;

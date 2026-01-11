@@ -11,8 +11,6 @@ import card3img from "../assets/ecard-3.webp";
 import card2img from "../assets/ecard-2.webp";
 import card1img from "../assets/ecard-1.jpg";
 
-
-
 const EventsPage = () => {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setCartOpen] = useState(false);
@@ -63,10 +61,7 @@ const EventsPage = () => {
       <div className="main-container">
         {/* Event Banner */}
         <div className="event-banner">
-          <img
-            src={eventtimg}
-            alt="Christmas Fundraising Gala Banner"
-          />
+          <img src={eventtimg} alt="Christmas Fundraising Gala Banner" />
         </div>
 
         {/* Event Details Card */}
@@ -108,6 +103,12 @@ const EventsPage = () => {
                 src={card1img}
                 alt="VIP Ticket"
                 className="ticket-image"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
               />
               <div className="ticket-info">
                 <h3>Vip Admission ticket</h3>
@@ -118,13 +119,7 @@ const EventsPage = () => {
               </div>
               <button
                 className="add-to-cart-btn"
-                onClick={() =>
-                  addToCart(
-                    "VIP Admission ticket",
-                    150,
-                    card1img
-                  )
-                }
+                onClick={() => addToCart("VIP Admission ticket", 150, card1img)}
               >
                 Add +
               </button>
@@ -136,18 +131,41 @@ const EventsPage = () => {
                 src={card2img}
                 alt="Presenting Sponsor"
                 className="ticket-image"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
               />
               <div className="ticket-info">
                 <h3>Presenting Sponsor – “Diamond Star”</h3>
                 <div className="ticket-price">$10,000</div>
                 <ul className="ticket-features">
-                  <li>One premier VIP table for 10 guests with champagne service.</li>
-                  <li> Presenting sponsor recognition on all event materials.</li>
-                  <li> Logo featured prominently on invitations, signage, website, & step & repeat.</li>
+                  <li>
+                    One premier VIP table for 10 guests with champagne service.
+                  </li>
+                  <li>
+                    {" "}
+                    Presenting sponsor recognition on all event materials.
+                  </li>
+                  <li>
+                    {" "}
+                    Logo featured prominently on invitations, signage, website,
+                    & step & repeat.
+                  </li>
                   <li> Full-page ad in program (prime placement).</li>
-                  <li> 2-minute welcome  remarks during the event.</li>
-                  <li> Spotlight feature on social media & the organization’s website.</li>
-                  <li> Custom luxury gift set for the table guests.Priority entry, reserved seating, and access to VIP perks.</li>
+                  <li> 2-minute welcome remarks during the event.</li>
+                  <li>
+                    {" "}
+                    Spotlight feature on social media & the organization’s
+                    website.
+                  </li>
+                  <li>
+                    {" "}
+                    Custom luxury gift set for the table guests.Priority entry,
+                    reserved seating, and access to VIP perks.
+                  </li>
                 </ul>
               </div>
               <button
@@ -164,15 +182,21 @@ const EventsPage = () => {
               </button>
             </div>
 
- {/* platinum Sponsor */}
+            {/* platinum Sponsor */}
             <div className="ticket-option">
               <img
                 src={card3img}
                 alt="Gold Sponsor"
                 className="ticket-image"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
               />
               <div className="ticket-info">
-                <h3>Platinum Sponsor – “Crystal Elegance”</h3>  
+                <h3>Platinum Sponsor – “Crystal Elegance”</h3>
                 <div className="ticket-price">$5,000</div>
                 <ul className="ticket-features">
                   <li>QVIP table for 8 guests.</li>
@@ -197,14 +221,18 @@ const EventsPage = () => {
               </button>
             </div>
 
-
-
             {/* Gold Sponsor */}
             <div className="ticket-option">
               <img
                 src={card4img}
                 alt="Gold Sponsor"
                 className="ticket-image"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
               />
               <div className="ticket-info">
                 <h3>Gold Sponsor – “Midnight Magic”</h3>
@@ -237,6 +265,12 @@ const EventsPage = () => {
                 src={card5img}
                 alt="Silver Sponsor"
                 className="ticket-image"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
               />
               <div className="ticket-info">
                 <h3>Silver Sponsor – “Winter Glow”</h3>
@@ -268,6 +302,12 @@ const EventsPage = () => {
                 src={card6img}
                 alt="Bronze Sponsor"
                 className="ticket-image"
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
               />
               <div className="ticket-info">
                 <h3>Bronze Sponsor – “Frost”</h3>
@@ -297,10 +337,7 @@ const EventsPage = () => {
 
         {/* Mission Trip Banner */}
         <div className="mission-banner">
-          <img
-            src={eventtsimg}
-            alt="Guyana 2026 Missionary Trip"
-          />
+          <img src={eventtsimg} alt="Guyana 2026 Missionary Trip" />
         </div>
       </div>
 
