@@ -12,8 +12,8 @@ import eventtsimg from "../assets/event-image-2.jpg";
 // import card1img from "../assets/ecard-1.jpg";
 
 const EventsPage = () => {
-  const [cart, setCart] = useState([]);
-  const [isCartOpen, setCartOpen] = useState(false);
+  // const [cart, setCart] = useState([]);
+  // const [isCartOpen, setCartOpen] = useState(false);
 
   // Add ticket to cart
   // const addToCart = (name, price, image) => {
