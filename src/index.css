@@ -211,8 +211,8 @@
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 4.5rem;
-  font-weight: 900;
+  font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -2px;
@@ -319,8 +319,8 @@
 
         .section-title {
             font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 900;
+            font-size: 3rem;
+            font-weight: 700;
             color: var(--dark-navy);
             margin-bottom: 2rem;
             line-height: 1.2;

@@ -1,54 +1,54 @@
 // src/pages/EventsPage.jsx
 import React, { useState } from "react";
-import CartModal from "../components/EventCart";
+// import CartModal from "../components/EventCart";
 import "../pages/EventPage.css"; // Your existing CSS
-import eventtimg from "../assets/Event image.jpg";
+// import eventtimg from "../assets/Event image.jpg";
 import eventtsimg from "../assets/event-image-2.jpg";
-import card6img from "../assets/ecard-6.webp";
-import card5img from "../assets/ecard-5.webp";
-import card4img from "../assets/ecard-4.webp";
-import card3img from "../assets/ecard-3.webp";
-import card2img from "../assets/ecard-2.webp";
-import card1img from "../assets/ecard-1.jpg";
+// import card6img from "../assets/ecard-6.webp";
+// import card5img from "../assets/ecard-5.webp";
+// import card4img from "../assets/ecard-4.webp";
+// import card3img from "../assets/ecard-3.webp";
+// import card2img from "../assets/ecard-2.webp";
+// import card1img from "../assets/ecard-1.jpg";
 
 const EventsPage = () => {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setCartOpen] = useState(false);
 
   // Add ticket to cart
-  const addToCart = (name, price, image) => {
-    setCart((prev) => {
-      const existing = prev.find((item) => item.name === name);
-      if (existing) {
-        return prev.map((item) =>
-          item.name === name ? { ...item, quantity: item.quantity + 1 } : item
-        );
-      }
-      return [...prev, { name, price, image, quantity: 1 }];
-    });
-  };
+  // const addToCart = (name, price, image) => {
+  //   setCart((prev) => {
+  //     const existing = prev.find((item) => item.name === name);
+  //     if (existing) {
+  //       return prev.map((item) =>
+  //         item.name === name ? { ...item, quantity: item.quantity + 1 } : item
+  //       );
+  //     }
+  //     return [...prev, { name, price, image, quantity: 1 }];
+  //   });
+  // };
 
   // Update quantity
-  const updateQuantity = (index, change) => {
-    setCart((prev) => {
-      const updated = [...prev];
-      updated[index].quantity += change;
-      if (updated[index].quantity <= 0) updated.splice(index, 1);
-      return updated;
-    });
-  };
+  // const updateQuantity = (index, change) => {
+  //   setCart((prev) => {
+  //     const updated = [...prev];
+  //     updated[index].quantity += change;
+  //     if (updated[index].quantity <= 0) updated.splice(index, 1);
+  //     return updated;
+  //   });
+  // };
 
   // Remove item
-  const removeItem = (index) => {
-    setCart((prev) => prev.filter((_, i) => i !== index));
-  };
+  // const removeItem = (index) => {
+  //   setCart((prev) => prev.filter((_, i) => i !== index));
+  // };
 
   // Open/close cart
-  const openCart = () => setCartOpen(true);
-  const closeCart = () => setCartOpen(false);
+  // const openCart = () => setCartOpen(true);
+  // const closeCart = () => setCartOpen(false);
 
   // Checkout (placeholder)
-  const showCheckout = () => alert("Checkout functionality goes here.");
+  // const showCheckout = () => alert("Checkout functionality goes here.");
 
   return (
     <div>
@@ -60,21 +60,21 @@ const EventsPage = () => {
       {/* Main Container */}
       <div className="main-container">
         {/* Event Banner */}
-        <div className="event-banner">
+        {/* <div className="event-banner">
           <img src={eventtimg} alt="Christmas Fundraising Gala Banner" />
-        </div>
+        </div> */}
 
         {/* Event Details Card */}
-        <div className="event-card">
-          <h2>
+        {/* <div className="event-card"> */}
+          {/* <h2>
             Legacy Hands of Hope
             <br />
             Christmas Fundraising Gala
             <br />& Charity Benefit
-          </h2>
+          </h2> */}
 
           {/* Event Meta */}
-          <div className="event-meta">
+          {/* <div className="event-meta">
             <div className="meta-item">
               <div className="meta-icon">📅</div>
               <div className="meta-content">
@@ -93,12 +93,12 @@ const EventsPage = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Ticket Options */}
-          <div className="ticket-options">
+          {/* <div className="ticket-options"> */}
             {/* VIP Admission */}
-            <div className="ticket-option">
+            {/* <div className="ticket-option">
               <img
                 src={card1img}
                 alt="VIP Ticket"
@@ -123,10 +123,10 @@ const EventsPage = () => {
               >
                 Add +
               </button>
-            </div>
+            </div> */}
 
             {/* Presenting Sponsor */}
-            <div className="ticket-option">
+            {/* <div className="ticket-option">
               <img
                 src={card2img}
                 alt="Presenting Sponsor"
@@ -180,10 +180,10 @@ const EventsPage = () => {
               >
                 Add +
               </button>
-            </div>
+            </div> */}
 
             {/* platinum Sponsor */}
-            <div className="ticket-option">
+            {/* <div className="ticket-option">
               <img
                 src={card3img}
                 alt="Gold Sponsor"
@@ -219,10 +219,10 @@ const EventsPage = () => {
               >
                 Add +
               </button>
-            </div>
+            </div> */}
 
             {/* Gold Sponsor */}
-            <div className="ticket-option">
+            {/* <div className="ticket-option">
               <img
                 src={card4img}
                 alt="Gold Sponsor"
@@ -257,10 +257,10 @@ const EventsPage = () => {
               >
                 Add +
               </button>
-            </div>
+            </div> */}
 
             {/* Silver Sponsor */}
-            <div className="ticket-option">
+            {/* <div className="ticket-option">
               <img
                 src={card5img}
                 alt="Silver Sponsor"
@@ -294,10 +294,10 @@ const EventsPage = () => {
               >
                 Add +
               </button>
-            </div>
+            </div> */}
 
             {/* Bronze Sponsor */}
-            <div className="ticket-option">
+            {/* <div className="ticket-option">
               <img
                 src={card6img}
                 alt="Bronze Sponsor"
@@ -331,9 +331,9 @@ const EventsPage = () => {
               >
                 Add +
               </button>
-            </div>
-          </div>
-        </div>
+            </div> */}
+          {/* </div> */}
+        {/* </div> */}
 
         {/* Mission Trip Banner */}
         <div className="mission-banner">
@@ -342,22 +342,22 @@ const EventsPage = () => {
       </div>
 
       {/* Floating Cart Button */}
-      <div className="floating-cart" onClick={openCart}>
+      {/* <div className="floating-cart" onClick={openCart}>
         🛒
         <span className="cart-badge">
           {cart.reduce((sum, item) => sum + item.quantity, 0)}
         </span>
-      </div>
+      </div> */}
 
       {/* Cart Modal */}
-      <CartModal
+      {/* <CartModal
         isOpen={isCartOpen}
         closeCart={closeCart}
         cart={cart}
         updateQuantity={updateQuantity}
         removeItem={removeItem}
         showCheckout={showCheckout}
-      />
+      /> */}
     </div>
   );
 };

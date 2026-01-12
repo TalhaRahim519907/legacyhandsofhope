@@ -11,7 +11,7 @@ const PastFundRaising = () => {
     },
     {
       img: galapast,
-      link: "https://collinsasenso.pixieset.com/lhohwebsite/",
+      link: "https://drive.google.com/drive/folders/1cVPSUaa4QpS6On95soU5_MpCkKUA1DAH?usp=sharing",
       alt: "LHOH Website Gallery",
       text: "Christmas Fund Raising Gala →"
     }
@@ -21,7 +21,7 @@ const PastFundRaising = () => {
     <section className="gallery">
       <div className="section-container">
         <h2 className="section-title" style={{ textAlign: "center" }}>
-          PAST FUND-RAISING EVENTS 
+          PAST FUND RAISING EVENTS 
         </h2>
         <div className="gallery-grid">
           {galleryItems.map((item, index) => (

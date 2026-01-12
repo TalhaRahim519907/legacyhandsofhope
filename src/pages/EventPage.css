@@ -13,7 +13,7 @@
         /* Page Title */
         .page-title {
             text-align: center;
-            padding: 7rem 2rem 2rem;
+            padding: 8rem 2rem 2rem;
             background: var(--warm-white);
         }
 
@@ -30,7 +30,7 @@
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0rem;
         }
 
         /* Event Banner */
