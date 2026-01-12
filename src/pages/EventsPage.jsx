@@ -1,5 +1,5 @@
 // src/pages/EventsPage.jsx
-import React, { useState } from "react";
+import React from "react";
 // import CartModal from "../components/EventCart";
 import "../pages/EventPage.css"; // Your existing CSS
 // import eventtimg from "../assets/Event image.jpg";
