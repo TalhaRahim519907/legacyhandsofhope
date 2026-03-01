@@ -31,14 +31,15 @@ const Store = ({ cart, addToCart, openCart }) => {
         </div>
 
         <div className="products-grid">
-          {filteredProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              addToCart={addToCart}
-            />
-          ))}
-        </div>
+  {filteredProducts.map((product, index) => (
+    <ProductCard
+      key={product.id}
+      product={product}
+      addToCart={addToCart}
+      showSize={index !== filteredProducts.length - 1} // ❌ hide size on last product
+    />
+  ))}
+</div>
       </div>
 
       <FloatingCart cart={cart} openCart={openCart} />

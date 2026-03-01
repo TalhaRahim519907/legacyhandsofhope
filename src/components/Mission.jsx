@@ -15,7 +15,7 @@ const Mission = () => {
           <div className="mission-content">
             <h2 className="section-title">MISSION</h2>
             <p className="mission-text">
-              Legacy Hands of Hope (LHOH) is a nonprofit organization dedicated to empowering individuals and communities within the African and Caribbean diaspora. Through compassionate support, educational initiatives, and the provision of essential resources, LHH fosters resilience, sustainable change, and self-sufficiency.
+              Legacy Hands of Hope (LHOH) is a nonprofit organization dedicated to empowering individuals and communities within the African and Caribbean diaspora. Through compassionate support, educational initiatives, and the provision of essential resources, LHOH fosters resilience, sustainable change, and self-sufficiency.
             </p>
             <div className="mission-highlight">
               <p>

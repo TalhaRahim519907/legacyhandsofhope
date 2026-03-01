@@ -1,0 +1,67 @@
+/* Ghana Missionary Trip Section */
+.ghana-section {
+  padding: 140px 40px;
+}
+
+/* Center Header */
+.ghana-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ghana-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2e7d32; /* Deep green for Ghana theme */
+  margin-bottom: 15px;
+}
+
+.ghana-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Image Grid */
+.ghana-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ghana-card {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.ghana-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.ghana-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .ghana-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .ghana-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ghana-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -4,6 +4,7 @@ import greenTShirtImg from "../assets/GREEN LHOH T-SHIRTS.webp";
 import kingbraceletImg from "../assets/LHOH King Bracelet.webp";
 import queenbraceletImg from "../assets/LHOH Queen Bracelet.webp";
 import whiteTShirtImg from "../assets/WHITE LHOH T-SHIRTS.webp";
+import blackTShirtImg from "../assets/blackTShirtImg.png"
 import shippingImg from "../assets/SHIPPING FEE.webp";
 
 const products = [
@@ -21,20 +22,36 @@ const products = [
     name: "GREEN LHOH T-SHIRTS",
     category: "apparel",
     price: 30,
-    description: "Comfortable t-shirt with inspiring message",
+    description: "Comfortable t-shirt with LHOH Logo",
     image: greenTShirtImg,
     badge: "New"
   },
   {
     id: 3,
-    name: "LHOH King Bracelet",
-    category: "accessories",
+    name: "WHITE LHOH T-SHIRTS",
+    category: "home",
     price: 30,
-    description: "Adjustable bracelet with embroidered logo",
-    image: kingbraceletImg
+    description: "Ceramic T-Shirt with LHOH design",
+    image: whiteTShirtImg
   },
   {
     id: 4,
+    name: "BLACK LHOH T-SHIRTS",
+    category: "home",
+    price: 30,
+    description: "Premium cotton T-shirt with LHOH logo ",
+    image: blackTShirtImg
+  },
+  {
+    id: 5,
+    name: "LHOH King Bracelet",
+    category: "accessories",
+    price: 30,
+    description: "Adjustable bracelet with LHOH logo",
+    image: kingbraceletImg
+  },
+  {
+    id: 6,
     name: "LHOH Queen Bracelet",
     category: "accessories",
     price: 30,
@@ -43,15 +60,7 @@ const products = [
     badge: "Eco-Friendly"
   },
   {
-    id: 5,
-    name: "WHITE LHOH T-SHIRTS",
-    category: "home",
-    price: 30,
-    description: "Ceramic mug with LHOH design",
-    image: whiteTShirtImg
-  },
-  {
-    id: 6,
+    id: 7,
     name: "SHIPPING FEE",
     category: "home",
     price: 11.95,

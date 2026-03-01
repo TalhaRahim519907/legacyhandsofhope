@@ -1,0 +1,101 @@
+.valentine-section {
+  padding: 100px 40px;
+}
+
+/* -------- Header -------- */
+
+.valentine-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.valentine-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d81b60; /* Valentine pink */
+  margin-bottom: 15px;
+}
+
+.valentine-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* -------- Gallery Grid -------- */
+
+.valentine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.valentine-card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.valentine-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.valentine-card img:hover {
+  transform: scale(1.05);
+}
+
+/* -------- Video Section -------- */
+
+.valentine-video-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.valentine-video-section h2 {
+  font-size: 2rem;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+.valentine-video-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.valentine-video-card video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* -------- Responsive -------- */
+
+@media (max-width: 1200px) {
+  .valentine-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .valentine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .valentine-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .valentine-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .valentine-video-card video {
+    max-width: 100%;
+  }
+}

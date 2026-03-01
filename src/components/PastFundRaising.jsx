@@ -1,19 +1,27 @@
 import React from "react";
 import rosepastImg from "../assets/rose-past.jpeg";
 import galapast from "../assets/gala-past.jpeg";
+import valentinepost from "../assets/valentine-post.jpg"
+
 const PastFundRaising = () => {
   const galleryItems = [
     {
       img: rosepastImg,
-      link: "https://photos.app.goo.gl/vygpiX4JMMcqbbZc6",
+      link: "/rosefest",
       alt: "Rose Fest",
       text: "Rose Fest Fund Raising Events →"
     },
     {
       img: galapast,
-      link: "https://drive.google.com/drive/folders/1cVPSUaa4QpS6On95soU5_MpCkKUA1DAH?usp=sharing",
+      link: "/christmasgala",
       alt: "LHOH Website Gallery",
       text: "Christmas Fund Raising Gala →"
+    },
+    {
+      img: valentinepost,
+      link: "/valentine",
+      alt: "LHOH Website Gallery",
+      text: "Valentine's Virtual FundRaising →"
     }
   ];
 
@@ -25,7 +33,7 @@ const PastFundRaising = () => {
         </h2>
         <div className="gallery-grid">
           {galleryItems.map((item, index) => (
-            <div className="gallery-card" key={index}>
+            <div className="gallery-card-1" key={index}>
               <img src={item.img} alt={item.alt} />
               <div className="gallery-overlay">
                 <a href={item.link} className="gallery-link">{item.text}</a>

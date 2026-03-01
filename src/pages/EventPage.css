@@ -13,7 +13,7 @@
         /* Page Title */
         .page-title {
             text-align: center;
-            padding: 8rem 2rem 2rem;
+            padding: 8rem 2rem 0rem;
             background: var(--warm-white);
         }
 
@@ -198,22 +198,64 @@
         }
 
         /* Mission Trip Banner */
-        .mission-banner {
-            width: 100%;
-            margin: 6rem 0;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
-            padding: 0.5rem;
-        }
+        /* Center wrapper */
+.mission-banner-wrapper {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically if wrapper has height */
+    /* min-height: 100vh;       optional: full viewport height */
+    /* padding: 2rem; */
+    /* background: #f9f9f9;     optional background */
+}
 
-        .mission-banner img {
-            width: 100%;
-            height: 50vh;
-            display: block;
-            border-radius: 16px;
-        }
+/* Banner container */
+.mission-banner {
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.mission-banner:hover {
+    transform: scale(1.03);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+/* Banner image */
+.mission-banner img {
+    width: 100%;
+    height: 70vh;
+    display: block;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .mission-banner {
+        width: 90%;
+    }
+
+    .mission-banner img {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .mission-banner {
+        width: 100%;
+        padding: 0.25rem;
+    }
+
+    .mission-banner img {
+        height: 40vh;
+    }
+}
 
         /* Floating Cart Button */
         .floating-cart {

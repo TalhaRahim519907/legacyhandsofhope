@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const ProductCard = ({ product, addToCart }) => {
+const ProductCard = ({ product, addToCart, showSize = true }) => {
   const [qty, setQty] = useState(1);
+  const [size, setSize] = useState("Medium"); // default size
   const [added, setAdded] = useState(false);
 
   const handleAdd = () => {
-    addToCart(product, qty);
+    addToCart({ ...product, size }, qty); // include size in cart
     setAdded(true);
     setTimeout(() => setAdded(false), 1000);
   };
@@ -13,11 +14,28 @@ const ProductCard = ({ product, addToCart }) => {
   return (
     <div className="product-card">
       <img src={product.image} alt={product.name || "Product image"} className="product-image" />
+
       <div className="product-info">
         <div className="product-category">{product.category}</div>
         <h3 className="product-name">{product.name}</h3>
         <p className="product-description">{product.description}</p>
         <div className="product-price">${product.price}</div>
+
+        {/* Size Selector */}
+        {showSize && (
+          <div className="size-selector">
+            <span>Select Size: </span>
+            {["Small", "Medium", "Large"].map((s) => (
+              <button
+                key={s}
+                className={`size-btn ${size === s ? "selected" : ""}`}
+                onClick={() => setSize(s)}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
 
         <div className="product-actions">
           <div className="quantity-selector">

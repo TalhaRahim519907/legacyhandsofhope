@@ -8,13 +8,19 @@ import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import Impact from "./components/Impact";
 import Happening from "./components/Happening";
-import Events from "./components/Events";
+// import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Donate from "./components/Donate";
 import Footer from "./components/Footer";
 import CartModal from "./components/CartModel";
 import SupportMission from "./components/SupportMission";
-import PastFundRaising from "./components/PastFundRaising";
+// import PastFundRaising from "./components/PastFundRaising";
+import Rosefest from "./components/Rosefest";
+import ChristmasGala from "./components/ChristmasGala";
+import Valentine from "./components/Valentine";
+import MissionPage from "./pages/MissionPage";
+import Ghana from "./components/Ghana";
+import Liberia from "./components/Liberia";
 
 // Pages
 import Give from "./pages/give";
@@ -86,10 +92,10 @@ function App() {
                   <Mission />
                   <Impact />
                   <Happening />
-                  <Events />
+                  {/* <Events /> */}
                   <Gallery />
                   <SupportMission/>
-                  <PastFundRaising />
+                  {/* <PastFundRaising /> */}
                   
 
                   <Donate />
@@ -100,7 +106,13 @@ function App() {
             <Route path="/give" element={<Give />} />
             {/* <Route path="/about" element={<Mission />} /> */}
             <Route path="/mission" element={<Mission />} />
-            <Route path="/events" element={<Events />} />
+            {/* <Route path="/events" element={<Events />} /> */}
+            <Route path="/rosefest" element={<Rosefest />} />
+            <Route path="/christmasgala" element={<ChristmasGala />} />
+            <Route path="/valentine" element={<Valentine />} />
+            <Route path="/missions" element={<MissionPage />} />
+            <Route path="/ghana" element={<Ghana />} />
+            <Route path="/liberia" element={<Liberia />} />
             <Route
   path="/EventsPage"
   element={

@@ -4,7 +4,7 @@ import rebeccaImg from "../assets/Rebecca Crumbley.jpg";
 import natashaImg from "../assets/Natasha Moore.jpg";
 import christineImg from "../assets/Christine Hoyte.jpg";
 import charityImg from "../assets/Charity-logo.jpg";
-import alissaImg from "../assets/Alissa-Gittens.jpg";
+// import alissaImg from "../assets/Alissa-Gittens.jpg";
 const Team = () => {
   return (
     <>
@@ -43,6 +43,9 @@ const Team = () => {
           <div className="member-info-full">
             <h3>Rebecca Crumbley</h3>
             <p className="member-title">Executive Director</p>
+            <p className="member-email">
+  <a href="mailto:Rebeccacrumbley@lhoh.org">Rebeccacrumbley@lhoh.org</a>
+</p>
             <p className="member-bio">
               Rebecca E. Crumbley is an accomplished career aviation industry
               professional, entrepreneur, philanthropist, and the co-founder and
@@ -86,6 +89,9 @@ const Team = () => {
             />
             <h3 className="member-name">Natasha Moore</h3>
             <p className="member-position">Chief Financial Officer</p>
+            <p className="member-email">
+  <a href="mailto:natashamoore@lhoh.org">natashamoore@lhoh.org</a>
+</p>
             <p className="member-description">
               Natasha Moore is a dedicated flight attendant whose global experiences
               have fueled her passion for community engagement and positive impact.
@@ -120,6 +126,9 @@ const Team = () => {
             />
             <h3 className="member-name">Christine Hoyte</h3>
             <p className="member-position">Chief Operating Officer</p>
+            <p className="member-email">
+  <a href="mailto:Christinehoyte@lhoh.org">Christinehoyte@lhoh.org</a>
+</p>
             <p className="member-description">
               Christine Hoyte is one of the co-founders and Chief Operating Officer
               of Legacy Hands of Hope (LHOH). She is an immigrant from South America,
@@ -157,41 +166,6 @@ const Team = () => {
         </div>
       </div>
 
-      {/* Operations Section */}
-      <div className="section-title-bar">
-        <h2>OPERATIONS</h2>
-      </div>
-
-      <div className="main-container operations-section">
-        <div className="operations-member">
-          <img
-            src={alissaImg}
-            alt="Alissa Gittens"
-            className="operations-image"
-          />
-          <div className="operations-info">
-            <h3>Alissa Gittens</h3>
-            <p className="member-position">Web Manager</p>
-            <p className="member-description">
-              Alissa Gittens is a Communications Manager and Education in Maryland
-              Schools, where she champions the transformative power of the arts. A
-              proud graduate of Morgan State University with a B.S. in Music
-              Education and Music Production and Sound Recording. As a performer,
-              she has been a featured and flute instructor and Music Services,
-              providing personalized flute instruction and performance services. As a
-              performer, she has been a featured and renowned artists, including The
-              Phantoms and the (Hamonic, Tramaine Hawkins, and Jason Nelson.
-            </p>
-            <p className="member-description" style={{ marginTop: "1rem" }}>
-              A strong advocate for arts and mental health for children in the
-              Caribbean, Alissa founded "Inc Urient Mauritorian Baltimore City & PG
-              County", an initiative focused in Maryland. Joining the MusicBridge,
-              teaming up receives more on building meaningful partnerships with the
-              fund.
-            </p>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

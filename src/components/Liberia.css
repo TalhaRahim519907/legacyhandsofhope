@@ -1,0 +1,61 @@
+/* Liberia Missionary Trip Section */
+.liberia-section {
+  padding: 140px 40px;
+}
+
+/* Center Header */
+.liberia-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.liberia-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d47a1; /* Deep blue */
+  margin-bottom: 15px;
+}
+
+.liberia-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Image Grid */
+.liberia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.liberia-card {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.liberia-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.liberia-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .liberia-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .liberia-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

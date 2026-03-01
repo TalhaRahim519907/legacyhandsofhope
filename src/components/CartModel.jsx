@@ -32,10 +32,18 @@ const CartModal = ({
 
               {cart.map((item) => (
                 <div className="cart-item" key={item.id}>
-                  <img src={item.image} alt={item.name || "Cart item"} className="cart-item-image" />
+                  <img
+                    src={item.image}
+                    alt={item.name || "Cart item"}
+                    className="cart-item-image"
+                  />
                   <div className="cart-item-details">
                     <h4>{item.name}</h4>
                     <p className="cart-item-price">${item.price}</p>
+                    {/* Display size if exists */}
+                    {item.size && (
+                      <p className="cart-item-size">Size: {item.size}</p>
+                    )}
                   </div>
 
                   <div className="cart-item-actions">

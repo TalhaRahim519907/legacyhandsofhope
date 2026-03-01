@@ -4,22 +4,22 @@ import React from "react";
 const supportOptions = [
   {
    icon: "💙",
-    title: "One-Time Donation",
+    title: "Donation",
     description:
       "Make a direct impact with a one-time contribution to support our programs and initiatives.",
     link: "#donate",
     linkText: "Donate Now",
     external: false,
   },
-  {
-    icon: "🔄",
-    title: "Monthly Giving",
-    description:
-      "Become a sustaining partner with recurring monthly donations to create lasting change.",
-    link: "/give",
-    linkText: "Join Monthly",
-    external: true,
-  },
+  // {
+  //   icon: "🔄",
+  //   title: "Monthly Giving",
+  //   description:
+  //     "Become a sustaining partner with recurring monthly donations to create lasting change.",
+  //   link: "/give",
+  //   linkText: "Join Monthly",
+  //   external: true,
+  // },
   {
     icon: "🛍️",
     title: "Shop Merchandise",
@@ -31,7 +31,7 @@ const supportOptions = [
   },
   {
     icon: "🤝",
-    title: "Volunteer",
+    title: "MemberShip",
     description:
       "Join our team of dedicated volunteers and directly impact the communities we serve.",
     link: "https://www.zeffy.com/en-US/ticketing/legacy-hands-of-hopes-memberships",

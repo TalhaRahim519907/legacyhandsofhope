@@ -26,7 +26,7 @@ const Events = () => {
     <section className="events" id="events">
       <div className="section-container">
         <h2 className="section-title" style={{ color: "white", textAlign: "center" }}>
-          UPCOMING EVENTS
+          PAST EVENTS
         </h2>
         <div className="events-grid">
           {events.map((event, index) => (

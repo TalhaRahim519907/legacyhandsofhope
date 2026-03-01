@@ -612,7 +612,17 @@
             position: relative;
             border-radius: 24px;
             overflow: hidden;
-            height: 400px;
+            height: 450px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .gallery-card-1 {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            height: 450px;
             cursor: pointer;
             transition: all 0.4s ease;
             animation: fadeInUp 0.8s ease-out;
@@ -622,10 +632,20 @@
             transform: scale(1.02);
         }
 
+         .gallery-card-1:hover {
+            transform: scale(1.02);
+        }
+
         .gallery-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .gallery-card-1 img{
+             width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
             transition: transform 0.6s ease;
         }
 
@@ -645,6 +665,9 @@
         }
 
         .gallery-card:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        .gallery-card-1:hover .gallery-overlay {
             transform: translateY(0);
         }
 
@@ -716,7 +739,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 4rem;
             margin-bottom: 3rem;
         }
@@ -782,6 +805,29 @@
             text-align: center;
             color: rgba(255, 255, 255, 0.6);
         }
+        .footer-candid {
+    display: flex;
+    align-items: baseline ;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+.footer-candid a {
+    display: inline-block;
+        width: stretch;
+}
+
+.footer-candid img {
+    width: 100%; /* fills the container column */
+    height: auto;
+    max-width: 250px; /* optional: cap so it doesn’t get too big */
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-candid img:hover {
+    transform: scale(1.05);
+}
 
         /* Store Section */
         .store {
@@ -931,6 +977,33 @@
             text-align: center;
             font-weight: 600;
         }
+
+        .size-selector {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.size-btn {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.size-btn:hover {
+  background: #e0e0e0;
+}
+
+.size-btn.selected {
+  background: #10b981; /* green when selected */
+  color: white;
+  border-color: #10b981;
+}
 
         .add-to-cart-btn {
             flex: 1;

@@ -1,5 +1,6 @@
 // Footer.jsx
 import React from "react";
+import candidLogo from "../assets/Candid.svg";
 
 const Footer = () => {
   return (
@@ -45,6 +46,17 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+{/* ✅ NEW CANDID LOGO SECTION */}
+  <div className="footer-candid">
+  <a
+    href="https://app.candid.org/profile/16354024/legacy-hands-of-hope-33-2517871"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={candidLogo} alt="View our Candid Profile" />
+  </a>
+</div>
 
         <div className="footer-section">
           <h4>Quick Links</h4>
