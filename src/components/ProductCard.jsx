@@ -20,22 +20,28 @@ const ProductCard = ({ product, addToCart, showSize = true }) => {
         <h3 className="product-name">{product.name}</h3>
         <p className="product-description">{product.description}</p>
         <div className="product-price">${product.price}</div>
+        <p className="size-note">
+      Shirts run small. Order a size up.
+    </p>
 
         {/* Size Selector */}
         {showSize && (
-          <div className="size-selector">
-            <span>Select Size: </span>
-            {["Small", "Medium", "Large"].map((s) => (
-              <button
-                key={s}
-                className={`size-btn ${size === s ? "selected" : ""}`}
-                onClick={() => setSize(s)}
-              >
-                {s}
-              </button>
-            ))}
-          </div>
-        )}
+          
+  <div className="size-selector">
+    <span>Select Size: </span>
+
+    {["Medium", "Large", "XL", "2XL", "3XL"].map((s) => (
+      <button
+        key={s}
+        className={`size-btn ${size === s ? "selected" : ""}`}
+        onClick={() => setSize(s)}
+      >
+        {s}
+      </button>
+    ))}
+
+  </div>
+)}
 
         <div className="product-actions">
           <div className="quantity-selector">

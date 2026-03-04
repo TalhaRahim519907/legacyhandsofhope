@@ -11,41 +11,41 @@ const products = [
   {
     id: 1,
     name: "BLUE LHOH T-SHIRTS",
-    category: "apparel",
+    categories: ["apparel", "home"],
     price: 30,
-    description: "Premium cotton t-shirt with LHOH logo",
+    description: "Premium T-shirts with LHOH Logo ",
     image: blueTShirtImg,
     badge: "Popular"
   },
   {
     id: 2,
     name: "GREEN LHOH T-SHIRTS",
-    category: "apparel",
+    categories: ["apparel", "home"],
     price: 30,
-    description: "Comfortable t-shirt with LHOH Logo",
+    description: "Premium T-shirts with LHOH Logo ",
     image: greenTShirtImg,
     badge: "New"
   },
   {
     id: 3,
     name: "WHITE LHOH T-SHIRTS",
-    category: "home",
+    categories: ["apparel", "home"],
     price: 30,
-    description: "Ceramic T-Shirt with LHOH design",
+    description: "Premium T-shirts with LHOH Logo ",
     image: whiteTShirtImg
   },
   {
     id: 4,
     name: "BLACK LHOH T-SHIRTS",
-    category: "home",
+    categories: ["apparel", "home"],
     price: 30,
-    description: "Premium cotton T-shirt with LHOH logo ",
+    description: "Premium Limited Edition with LHOH Logo ",
     image: blackTShirtImg
   },
   {
     id: 5,
     name: "LHOH King Bracelet",
-    category: "accessories",
+    categories: ["accessories"],
     price: 30,
     description: "Adjustable bracelet with LHOH logo",
     image: kingbraceletImg
@@ -53,7 +53,7 @@ const products = [
   {
     id: 6,
     name: "LHOH Queen Bracelet",
-    category: "accessories",
+    categories: ["accessories"],
     price: 30,
     description: "Eco-friendly bracelet for everyday use",
     image: queenbraceletImg,
@@ -62,7 +62,7 @@ const products = [
   {
     id: 7,
     name: "SHIPPING FEE",
-    category: "home",
+    categories: [],
     price: 11.95,
     description: "USPS Standard shipping",
     image: shippingImg

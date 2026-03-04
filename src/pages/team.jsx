@@ -44,8 +44,8 @@ const Team = () => {
             <h3>Rebecca Crumbley</h3>
             <p className="member-title">Executive Director</p>
             <p className="member-email">
-  <a href="mailto:Rebeccacrumbley@lhoh.org">Rebeccacrumbley@lhoh.org</a>
-</p>
+              <a href="mailto:Rebeccacrumbley@lhoh.org">Rebeccacrumbley@lhoh.org</a>
+            </p>
             <p className="member-bio">
               Rebecca E. Crumbley is an accomplished career aviation industry
               professional, entrepreneur, philanthropist, and the co-founder and
@@ -90,31 +90,24 @@ const Team = () => {
             <h3 className="member-name">Natasha Moore</h3>
             <p className="member-position">Chief Financial Officer</p>
             <p className="member-email">
-  <a href="mailto:natashamoore@lhoh.org">natashamoore@lhoh.org</a>
-</p>
+              <a href="mailto:natashamoore@lhoh.org">natashamoore@lhoh.org</a>
+            </p>
             <p className="member-description">
-              Natasha Moore is a dedicated flight attendant whose global experiences
-              have fueled her passion for community engagement and positive impact.
-              Growing up in Guyana before migrating to the United States, Natasha has
-              brought a unique perspective to her work and commitment to community
-              and sustainable change.
+              Natasha Moore is a purpose driven leader whose life journey from Guyana
+              to the United States shaped her deep commitment to service, 
+              resilience, and community empowerment. Her global perspective, 
+              cultivated through years as a flight attendant, has given her 
+              firsthand insight into both the richness of diverse cultures and 
+              the common challenges communities face around the world.
             </p>
-            <p className="member-description" style={{ marginTop: "1rem" }}>
-              Harnessing the legacy from her mother, Rebecca Crumbley, Natasha is
-              focused on creating lasting, transformative solutions beyond temporary
-              relief. Legacy Hands of Hope empowers communities to build
-              self-sufficiency, resilience, and the tools to overcome any challenge.
-              Natasha's passion for people and cultures and her entrepreneurial
-              spirit led to her dedication to innovative ideas and transforming
-              partnerships that elevate communities.
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>
+              As Chief Financial Officer of Legacy Hands of Hope, Natasha brings together financial stewardship, entrepreneurial vision, and compassionate leadership. She is committed to building systems that do more than provide temporary relief to create sustainable pathways to long-term self-sufficiency. Her approach is grounded in accountability and strategic partnerships that strengthen communities from within.
             </p>
-            <p className="member-description" style={{ marginTop: "1rem" }}>
-              Her mission is to create a foundation for long-term, sustainable
-              self-sufficiency that transcends geographical and socioeconomic
-              boundaries. Natasha Moore believes in making the world a more just and
-              equitable place. Through Legacy Hands of Hope, Natasha's bold vision
-              paves the way for deeply transformative changes that touches.
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>
+              Natasha is dedicated to advancing solutions that empower individuals and families to overcome barriers and thrive independently. She believes meaningful impact requires more than good intentions; it demands structure and collaboration.
             </p>
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>Natasha’s mission is clear: to help build resilient communities equipped with the resources, tools, and confidence to shape their own futures. Through Legacy Hands of Hope, she is working to foster transformation that crosses borders, bridges socioeconomic divides, and creates lasting opportunity.</p>
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>She welcomes collaboration with individuals, organizations, and partners who share a commitment to sustainable change and community-driven impact.</p>
           </div>
 
           {/* Christine Hoyte */}
@@ -127,40 +120,19 @@ const Team = () => {
             <h3 className="member-name">Christine Hoyte</h3>
             <p className="member-position">Chief Operating Officer</p>
             <p className="member-email">
-  <a href="mailto:Christinehoyte@lhoh.org">Christinehoyte@lhoh.org</a>
-</p>
+              <a href="mailto:Christinehoyte@lhoh.org">Christinehoyte@lhoh.org</a>
+            </p>
             <p className="member-description">
-              Christine Hoyte is one of the co-founders and Chief Operating Officer
-              of Legacy Hands of Hope (LHOH). She is an immigrant from South America,
-              and her journey has fueled her passion for using her skills and
-              resources to advocate for marginalized communities. She brings a deep
-              commitment to healthcare, education, and community service. She draws
-              on her diverse professional background and personal experiences to
-              make a meaningful impact on the lives of others.
+              Christine Hoyte is the Co-Founder and Chief Operating Officer of Legacy Hands of Hope (LHOH), a nonprofit organization dedicated to advancing health equity and empowering underserved communities within the African and Caribbean diaspora. As an immigrant from South America, Christine’s personal journey fuels her unwavering commitment to dismantling systemic barriers that disproportionately impact marginalized populations.
             </p>
-            <p className="member-description" style={{ marginTop: "1rem" }}>
-              Christine's career includes serving as an emergency medicine, has worked
-              in high-pressure hospital environments. She is also a nurse practitioner
-              student for better or for worse. Christine holds a Master's degree in
-              clinical psychology, showcasing her dedication to lifelong learning
-              and holistic patient care.
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>
+              With a professional foundation in emergency medicine, Christine has served in high-acuity hospital settings where precision, leadership, and resilience are critical. She is currently advancing her clinical expertise as a Nurse Practitioner student. Christine holds a Master of Science in Nursing and a master’s degree in clinical psychology, uniquely positioning her at the intersection of physical and mental health care.
             </p>
-            <p className="member-description" style={{ marginTop: "1rem" }}>
-              Her diverse skill set has placed her in a unique position to address the
-              complex needs of individuals in vulnerable populations. She is passionate
-              about tackling health disparities, recognizing that barriers such as
-              limited access to healthcare, inadequate education, and poverty
-              perpetuate cycles of poor health and violence, distributing school
-              supplies and medical equipment during the Ebola crisis in Liberia and
-              Sierra Leone, and supporting charitable causes in her home country of
-              Guyana. This hands-on involvement in global humanitarian efforts
-              underscores her unwavering commitment to making a difference.
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>
+              Her multidisciplinary background equips her to address complex health disparities rooted in poverty, limited access to education, and structural inequities. Christine has participated in international humanitarian efforts, including medical and educational supply distribution during the Ebola crisis in Liberia and Sierra Leone, and community initiatives in Guyana.
             </p>
-            <p className="member-description" style={{ marginTop: "1rem" }}>
-              Christine strongly believes in the power of giving back. Her desire to
-              uplift communities facing social, health, and economic challenges
-              drives her work with Legacy Hands of Hope. Christine believes in
-              empowering people to reclaim their health and their lives.
+            <p className="member-description" style={{ marginTop: "0.75rem" }}>
+              Through Legacy Hands of Hope, she champions sustainable solutions that empower communities to reclaim their health, dignity, and future0.75
             </p>
           </div>
         </div>

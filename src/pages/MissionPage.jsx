@@ -4,19 +4,19 @@ import { useNavigate } from "react-router-dom";
 import "../pages/MissionPage.css";
 
 import ghanaImg from "../assets/ghana.jpeg";
-import liberiaImg from "../assets/liberia.jpg";
+import liberiaImg from "../assets/l8.jpeg";
 
 const MissionPage = () => {
   const navigate = useNavigate();
 
   const trips = [
-    { img: ghanaImg, title: "Ghana's Missionary Trip", path: "/ghana" },
-    { img: liberiaImg, title: "Liberia Missionary Trip", path: "/liberia" },
+    { img: ghanaImg, title: "Ghana Mission 2025 ", path: "/ghana" },
+    { img: liberiaImg, title: "Liberia Mission 2026", path: "/liberia" },
   ];
 
   return (
     <section className="mission-page">
-      <h1 className="mission-page-title">Our Missionary Trips</h1>
+      <h1 className="mission-page-title">Our Missions</h1>
 
       <div className="mission-grid">
         {trips.map((trip, idx) => (
