@@ -47,16 +47,16 @@ const Footer = () => {
           </div>
         </div>
 
-{/* ✅ NEW CANDID LOGO SECTION */}
-  <div className="footer-candid">
-  <a
-    href="https://app.candid.org/profile/16354024/legacy-hands-of-hope-33-2517871"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src={candidLogo} alt="View our Candid Profile" />
-  </a>
-</div>
+        {/* ✅ NEW CANDID LOGO SECTION */}
+        <div className="footer-candid">
+          <a
+            href="https://app.candid.org/profile/16354024/legacy-hands-of-hope-33-2517871"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={candidLogo} alt="View our Candid Profile" />
+          </a>
+        </div>
 
         <div className="footer-section">
           <h4>Quick Links</h4>
@@ -74,7 +74,13 @@ const Footer = () => {
 
         <div className="footer-section" id="team">
           <h4>Contact Us</h4>
-          <a href="mailto:LegacyHandsofHope@gmail.com">LegacyHandsofHope@gmail.com</a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=LegacyHandsofHope@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LegacyHandsofHope@gmail.com
+          </a>
           <p style={{ color: "rgba(255, 255, 255, 0.7)", marginTop: "1rem" }}>
             (703) 457-0695<br />
             (631) 509-5484

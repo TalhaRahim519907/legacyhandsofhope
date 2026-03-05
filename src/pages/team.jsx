@@ -44,7 +44,13 @@ const Team = () => {
             <h3>Rebecca Crumbley</h3>
             <p className="member-title">Executive Director</p>
             <p className="member-email">
-              <a href="mailto:Rebeccacrumbley@lhoh.org">Rebeccacrumbley@lhoh.org</a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=Rebeccacrumbley@lhoh.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Rebeccacrumbley@lhoh.org
+              </a>
             </p>
             <p className="member-bio">
               Rebecca E. Crumbley is an accomplished career aviation industry
@@ -90,14 +96,20 @@ const Team = () => {
             <h3 className="member-name">Natasha Moore</h3>
             <p className="member-position">Chief Financial Officer</p>
             <p className="member-email">
-              <a href="mailto:natashamoore@lhoh.org">natashamoore@lhoh.org</a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=Rebeccacrumbley@lhoh.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Rebeccacrumbley@lhoh.org
+              </a>
             </p>
             <p className="member-description">
               Natasha Moore is a purpose driven leader whose life journey from Guyana
-              to the United States shaped her deep commitment to service, 
-              resilience, and community empowerment. Her global perspective, 
-              cultivated through years as a flight attendant, has given her 
-              firsthand insight into both the richness of diverse cultures and 
+              to the United States shaped her deep commitment to service,
+              resilience, and community empowerment. Her global perspective,
+              cultivated through years as a flight attendant, has given her
+              firsthand insight into both the richness of diverse cultures and
               the common challenges communities face around the world.
             </p>
             <p className="member-description" style={{ marginTop: "0.75rem" }}>
@@ -120,7 +132,13 @@ const Team = () => {
             <h3 className="member-name">Christine Hoyte</h3>
             <p className="member-position">Chief Operating Officer</p>
             <p className="member-email">
-              <a href="mailto:Christinehoyte@lhoh.org">Christinehoyte@lhoh.org</a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=Christinehoyte@lhoh.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Christinehoyte@lhoh.org
+              </a>
             </p>
             <p className="member-description">
               Christine Hoyte is the Co-Founder and Chief Operating Officer of Legacy Hands of Hope (LHOH), a nonprofit organization dedicated to advancing health equity and empowering underserved communities within the African and Caribbean diaspora. As an immigrant from South America, Christine’s personal journey fuels her unwavering commitment to dismantling systemic barriers that disproportionately impact marginalized populations.
