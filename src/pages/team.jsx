@@ -132,7 +132,7 @@ const Team = () => {
               Her multidisciplinary background equips her to address complex health disparities rooted in poverty, limited access to education, and structural inequities. Christine has participated in international humanitarian efforts, including medical and educational supply distribution during the Ebola crisis in Liberia and Sierra Leone, and community initiatives in Guyana.
             </p>
             <p className="member-description" style={{ marginTop: "0.75rem" }}>
-              Through Legacy Hands of Hope, she champions sustainable solutions that empower communities to reclaim their health, dignity, and future0.75
+              Through Legacy Hands of Hope, she champions sustainable solutions that empower communities to reclaim their health, dignity, and future.
             </p>
           </div>
         </div>
