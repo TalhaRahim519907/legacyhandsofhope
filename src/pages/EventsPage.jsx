@@ -2,6 +2,7 @@
 import React from "react";
 import "../pages/EventPage.css"; // Your existing CSS
 import eventtsimg from "../assets/UP-img.jpeg";
+import eventtsimg1 from "../assets/Up-img1.jpeg";
 import PastFundRaising from "../components/PastFundRaising";
 
 const EventsPage = () => {
@@ -24,6 +25,20 @@ const EventsPage = () => {
             <div className="mission-banner">
               <img
                 src={eventtsimg}
+                alt="Guyana 2026 Missionary Trip"
+              />
+            </div>
+          </a>
+        </div>
+        <div className="mission-banner-wrapper">
+          <a
+            href="https://www.zeffy.com/en-US/donation-form/guyana-2026-missionary-trip"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="mission-banner">
+              <img
+                src={eventtsimg1}
                 alt="Guyana 2026 Missionary Trip"
               />
             </div>
