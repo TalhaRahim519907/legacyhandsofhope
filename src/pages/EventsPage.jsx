@@ -35,6 +35,15 @@ const EventsPage = () => {
             href="https://www.zeffy.com/en-US/donation-form/guyana-2026-missionary-trip"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              if (window.gtag) {
+                window.gtag('event', 'conversion', {
+                  send_to: 'AW-17961537939/oVqLCKCot4QcEJOj3fRC',
+                  value: 1.0,
+                  currency: 'USD'
+                });
+              }
+            }}
           >
             <div className="mission-banner">
               <img
