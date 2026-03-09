@@ -1,6 +1,7 @@
 // src/App.jsx
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Components
 import Header from "./components/Header";
@@ -83,6 +84,7 @@ function App() {
         <Header />
 
         <main>
+          <ScrollToTop />
           <Routes>
             <Route
               path="/"
@@ -94,9 +96,9 @@ function App() {
                   <Happening />
                   {/* <Events /> */}
                   <Gallery />
-                  <SupportMission/>
+                  <SupportMission />
                   {/* <PastFundRaising /> */}
-                  
+
 
                   <Donate />
                 </>
@@ -114,16 +116,16 @@ function App() {
             <Route path="/ghana" element={<Ghana />} />
             <Route path="/liberia" element={<Liberia />} />
             <Route
-  path="/EventsPage"
-  element={
-    <EventsPage cart={cart} addToCart={addToCart} openCart={openCart} />
-  }
-/>
+              path="/EventsPage"
+              element={
+                <EventsPage cart={cart} addToCart={addToCart} openCart={openCart} />
+              }
+            />
             <Route path="/store" element={<Store
-                    cart={cart}
-                    addToCart={addToCart}
-                    openCart={openCart}
-                  />} />
+              cart={cart}
+              addToCart={addToCart}
+              openCart={openCart}
+            />} />
             <Route path="/team" element={<Team />} />
           </Routes>
         </main>

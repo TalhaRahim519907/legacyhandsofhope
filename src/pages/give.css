@@ -57,6 +57,15 @@ body {
     margin-bottom: 1.5rem;
     font-weight: 900;
 }
+.page-title-1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--dark-navy);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+}
 
 /* Donation Section */
 .donation-section {

@@ -58,7 +58,7 @@ You will receive a confirmation email at ${formData.email}.
 
   return (
     <div className="main-container">
-      <h1 className="page-title">Support the Mission</h1>
+      <h1 className="page-title-1">Support the Mission</h1>
 
       {/* Donation Section */}
       {!showCheckout && (

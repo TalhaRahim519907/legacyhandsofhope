@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <a href="/mission">About Us</a>
-          <a href="/events">Events</a>
+          <a href="/EventsPage">Events</a>
           <a href="/give">Donate</a>
           <a
             href="https://app.candid.org/profile/16354024/legacy-hands-of-hope-33-2517871"
