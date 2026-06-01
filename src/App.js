@@ -22,6 +22,7 @@ import Valentine from "./components/Valentine";
 import MissionPage from "./pages/MissionPage";
 import Ghana from "./components/Ghana";
 import Liberia from "./components/Liberia";
+import Guyana from "./components/Guyana";
 
 // Pages
 import Give from "./pages/give";
@@ -115,6 +116,7 @@ function App() {
             <Route path="/missions" element={<MissionPage />} />
             <Route path="/ghana" element={<Ghana />} />
             <Route path="/liberia" element={<Liberia />} />
+            <Route path="/guyana" element={<Guyana />} />
             <Route
               path="/EventsPage"
               element={
