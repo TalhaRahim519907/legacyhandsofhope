@@ -87,29 +87,29 @@ You will receive a confirmation email at ${formData.email}.
             </div>
 
             {/* Amount Options */}
-           <div className="amount-grid">
-  {[50, 100, 300, 500].map((val) => (
-    <div
-      key={val}
-      className={`amount-option ${amount === val ? "active" : ""}`}
-      onClick={() => setAmount(val)}
-    >
-      ${val}
-    </div>
-  ))}
+            <div className="amount-grid">
+              {[50, 100, 300, 500].map((val) => (
+                <div
+                  key={val}
+                  className={`amount-option ${amount === val ? "active" : ""}`}
+                  onClick={() => setAmount(val)}
+                >
+                  ${val}
+                </div>
+              ))}
 
-  {/* Custom Amount Box */}
-  <div className={`amount-option custom ${![50,100,300,500].includes(amount) ? "active" : ""}`}>
-    $
-    <input
-      type="number"
-      min="1"
-      placeholder="Custom"
-      value={! [50,100,300,500].includes(amount) ? amount : ""}
-      onChange={(e) => setAmount(Number(e.target.value))}
-    />
-  </div>
-</div>
+              {/* Custom Amount Box */}
+              <div className={`amount-option custom ${![50, 100, 300, 500].includes(amount) ? "active" : ""}`}>
+                $
+                <input
+                  type="number"
+                  min="1"
+                  placeholder="Custom"
+                  value={![50, 100, 300, 500].includes(amount) ? amount : ""}
+                  onChange={(e) => setAmount(Number(e.target.value))}
+                />
+              </div>
+            </div>
 
 
             {/* Selected Amount */}
@@ -141,6 +141,7 @@ You will receive a confirmation email at ${formData.email}.
       )}
 
       {/* Checkout Section */}
+
       {showCheckout && (
         <div className="checkout-section active">
           <h2 className="form-title">Complete Your Donation</h2>
@@ -208,7 +209,7 @@ You will receive a confirmation email at ${formData.email}.
             <div className="form-section">
               <h3>Payment Method</h3>
               <div className="payment-methods">
-                {["credit", "debit", "paypal", "venmo"].map((method) => (
+                {["credit", "debit", "paypal"].map((method) => (
                   <label
                     key={method}
                     className={`payment-method ${paymentMethod === method ? "selected" : ""}`}
@@ -216,7 +217,7 @@ You will receive a confirmation email at ${formData.email}.
                   >
                     <input type="radio" name="payment" />
                     <div className="payment-method-icon">
-                      {method === "paypal" ? "🅿️" : method === "venmo" ? "📱" : "💳"}
+                      {method === "paypal" ? "🅿️" : "💳"}
                     </div>
                     <div>{method.toUpperCase()}</div>
                   </label>
@@ -242,8 +243,17 @@ You will receive a confirmation email at ${formData.email}.
                   </div>
                 </div>
               )}
-            </div>
 
+              {/* PayPal Details */}
+              {paymentMethod === "paypal" && (
+                <div id="paypalDetails">
+                  <div className="form-group">
+                    <label>PayPal Email / ID *</label>
+                    <input type="email" placeholder="yourname@example.com" required />
+                  </div>
+                </div>
+              )}
+            </div>
             {/* Donation Summary */}
             <div className="form-section">
               <h3>Donation Summary</h3>

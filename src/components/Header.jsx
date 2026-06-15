@@ -48,7 +48,7 @@ function Header() {
             <li>
               <NavLink to="/missions" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>Mission</NavLink>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.zeffy.com/en-US/ticketing/legacy-hands-of-hopes-volunteer-program"
                 target="_blank"
@@ -57,9 +57,19 @@ function Header() {
               >
                 Volunteer
               </a>
+            </li> */}
+            <li>
+              <a
+                href="https://www.zeffy.com/en-US/ticketing/legacy-hands-of-hopes-memberships"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+              >
+                MemberShip
+              </a>
             </li>
             <li>
-              <NavLink to="/give" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>Give</NavLink>
+              <NavLink to="/give" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>Donate</NavLink>
             </li>
             <li>
               <NavLink to="/store" onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active" : ""}>Store</NavLink>

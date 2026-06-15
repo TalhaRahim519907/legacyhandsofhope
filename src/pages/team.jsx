@@ -42,7 +42,7 @@ const Team = () => {
           />
           <div className="member-info-full">
             <h3>Rebecca Crumbley</h3>
-            <p className="member-title">Executive Director</p>
+            <p className="member-title">Chief Executive Officer & Co-Founder, <br/>Legacy Hands of Hope </p>
             <p className="member-email">
               <a
                 href="https://mail.google.com/mail/?view=cm&to=Rebeccacrumbley@lhoh.org"
@@ -53,33 +53,34 @@ const Team = () => {
               </a>
             </p>
             <p className="member-bio">
-              Rebecca E. Crumbley is an accomplished career aviation industry
-              professional, entrepreneur, philanthropist, and the co-founder and
-              Chief Executive Officer of Legacy Hands of Hope (LHOH), a non-profit
-              organization. In her role as CEO, she is responsible for shaping the
-              organization's strategic vision, guiding its direction, and ensuring
-              mission realization, all while fostering meaningful stakeholder
-              engagement.
+              As Chief Executive Officer and Co-Founder of Legacy Hands of Hope (LHOH), 
+              Rebecca is a primary strategist dedicated to architecting global change 
+              and dismantling barriers for underserved communities. Her leadership is 
+              defined by an uncompromising commitment to high-level stakeholder engagement
+              and the creation of sustainable, community-first solutions. This vision was
+              early evidenced by LHOH's inaugural project: the construction of an electrically
+              powered water well, providing clean drinking water to a Ghanaian school serving 
+              over 900+ students.
             </p>
             <p className="member-bio">
-              With over 17 years of experience as a Flight Attendant, Rebecca's
-              passion for aviation, service, and helping others has shaped her
-              professional journey. It was in this role that she discovered her deep
-              commitment to service and compassion.
+              Rebecca seamlessly merges high-level business acumen with a humanitarian pulse. 
+              Her global perspective was forged through more than 20 years of experience as an
+              aviation professional	a career that honed her dedication to service and her 
+              unique ability to navigate complex cultural landscapes with grace and authority.
             </p>
             <p className="member-bio">
-              Beyond her work in aviation, Rebecca is also an entrepreneur, owning
-              two successful businesses that evolved from passion projects into
-              high-demand, profitable ventures. Her success in these businesses
-              highlights her business savvy, networking skills, and ability to
-              connect with people in diverse ways.
+              The definitive anchor for Rebecca's mission is her enskinment as Po'anna (9ueen Mother)
+               of the Gbimsi Traditional Area	the first individual in the region's history to hold 
+               this title. Equivalent in responsibility to a stateswoman, she serves as an official 
+               representative of the Gbimsi people, advocating for their interests with Ghanaian
+                officials, international partners, and traditional chieftaincies.
+
             </p>
             <p className="member-bio">
-              When she's not busy with her professional pursuits, Rebecca enjoys
-              spending quality time with her husband, watching African cinema, and
-              planning her next community engagement. She and her husband are proud
-              parents of two adult sons and have one cherished granddaughter, whom
-              they adore.
+              Her professional drive is underpinned by her marriage to her husband, John, 
+              their two adult sons, two cherished granddaughters, and successful entrepreneurial
+              ventures. She remains fiercely dedicated to building a foundation of equity and
+               opportunity that will empower generations of leaders to come.
             </p>
           </div>
         </div>

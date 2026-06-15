@@ -37,6 +37,13 @@ const Hero = () => {
       <div className="hero-content">
         <h1>LEGACY HANDS OF HOPE</h1>
         <p className="hero-tagline">"Empowering Communities with Hope"</p>
+         <a
+          href="/give"
+          className="donate-btn"
+          rel="noopener noreferrer"
+        >
+          DONATE NOW
+        </a>
       </div>
 
       <div className="scroll-indicator"></div>

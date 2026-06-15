@@ -6,7 +6,7 @@ const supportOptions = [
    icon: "💙",
     title: "Donation",
     description:
-      "Make a direct impact with a one-time contribution to support our programs and initiatives.",
+      "Make a direct impact with one-time contribution to support our programs and initiatives.",
     link: "#donate",
     linkText: "Donate Now",
     external: false,
