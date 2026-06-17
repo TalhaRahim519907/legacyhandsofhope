@@ -1,3 +1,93 @@
+// import React from "react";
+// import CheckoutForm from "./CheckoutForm";
+// import "./Cart.css";
+
+// const CartModal = ({
+//   isOpen,
+//   closeCart,
+//   cart,
+//   updateQty,
+//   removeItem,
+//   showCheckout,
+//   setShowCheckout,
+// }) => {
+//   if (!isOpen) return null;
+
+//   const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+
+//   return (
+//     <div className="cart-modal active" onClick={closeCart}>
+//       <div className="cart-content" onClick={(e) => e.stopPropagation()}>
+//         <div className="cart-header">
+//           <h2>{showCheckout ? "Checkout" : "Shopping Cart"}</h2>
+//           <button className="close-cart" onClick={closeCart}>
+//             ×
+//           </button>
+//         </div>
+
+//         {!showCheckout ? (
+//           <>
+//             <div className="cart-items">
+//               {cart.length === 0 && <p>Your cart is empty</p>}
+
+//               {cart.map((item) => (
+//                 <div className="cart-item" key={item.id}>
+//                   <img
+//                     src={item.image}
+//                     alt={item.name || "Cart item"}
+//                     className="cart-item-image"
+//                   />
+//                   <div className="cart-item-details">
+//                     <h4>{item.name}</h4>
+//                     <p className="cart-item-price">${item.price}</p>
+//                     {/* Display size if exists */}
+//                     {item.size && (
+//                       <p className="cart-item-size">Size: {item.size}</p>
+//                     )}
+//                   </div>
+
+//                   <div className="cart-item-actions">
+//                     <div className="quantity-selector">
+//                       <button onClick={() => updateQty(item.id, -1)}>-</button>
+//                       <span>{item.quantity}</span>
+//                       <button onClick={() => updateQty(item.id, 1)}>+</button>
+//                     </div>
+//                     <button
+//                       className="remove-item"
+//                       onClick={() => removeItem(item.id)}
+//                     >
+//                       Remove
+//                     </button>
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+
+//             {cart.length > 0 && (
+//               <div className="cart-summary">
+//                 <div className="cart-total">
+//                   <span>Total</span>
+//                   <span>${total}</span>
+//                 </div>
+//                 <button
+//                   className="checkout-btn"
+//                   onClick={() => setShowCheckout(true)}
+//                 >
+//                   Proceed to Checkout
+//                 </button>
+//               </div>
+//             )}
+//           </>
+//         ) : (
+//           <CheckoutForm total={total} back={() => setShowCheckout(false)} />
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CartModal;
+
 import React from "react";
 import CheckoutForm from "./CheckoutForm";
 import "./Cart.css";
@@ -15,6 +105,12 @@ const CartModal = ({
 
   const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
 
+  // Sort: shipping fee always last
+  const sortedCart = [
+    ...cart.filter(item => item.name !== "SHIPPING FEE"),
+    ...cart.filter(item => item.name === "SHIPPING FEE"),
+  ];
+
   return (
     <div className="cart-modal active" onClick={closeCart}>
       <div className="cart-content" onClick={(e) => e.stopPropagation()}>
@@ -30,7 +126,7 @@ const CartModal = ({
             <div className="cart-items">
               {cart.length === 0 && <p>Your cart is empty</p>}
 
-              {cart.map((item) => (
+              {sortedCart.map((item) => (
                 <div className="cart-item" key={item.id}>
                   <img
                     src={item.image}
@@ -39,25 +135,35 @@ const CartModal = ({
                   />
                   <div className="cart-item-details">
                     <h4>{item.name}</h4>
-                    <p className="cart-item-price">${item.price}</p>
-                    {/* Display size if exists */}
+                    <p className="cart-item-price">
+                      ${item.price}
+                      {item.quantity > 1 && (
+                        <span style={{ color: "#555", fontSize: "0.85rem", marginLeft: "6px" }}>
+                          × {item.quantity} = ${(item.price * item.quantity).toFixed(2)}
+                        </span>
+                      )}
+                    </p>
                     {item.size && (
                       <p className="cart-item-size">Size: {item.size}</p>
                     )}
                   </div>
 
                   <div className="cart-item-actions">
-                    <div className="quantity-selector">
-                      <button onClick={() => updateQty(item.id, -1)}>-</button>
-                      <span>{item.quantity}</span>
-                      <button onClick={() => updateQty(item.id, 1)}>+</button>
-                    </div>
-                    <button
-                      className="remove-item"
-                      onClick={() => removeItem(item.id)}
-                    >
-                      Remove
-                    </button>
+                    {item.name !== "SHIPPING FEE" && (
+                      <>
+                        <div className="quantity-selector">
+                          <button onClick={() => updateQty(item.id, -1)}>-</button>
+                          <span>{item.quantity}</span>
+                          <button onClick={() => updateQty(item.id, 1)}>+</button>
+                        </div>
+                        <button
+                          className="remove-item"
+                          onClick={() => removeItem(item.id)}
+                        >
+                          Remove
+                        </button>
+                      </>
+                    )}
                   </div>
                 </div>
               ))}
@@ -67,7 +173,7 @@ const CartModal = ({
               <div className="cart-summary">
                 <div className="cart-total">
                   <span>Total</span>
-                  <span>${total}</span>
+                  <span>${total.toFixed(2)}</span>
                 </div>
                 <button
                   className="checkout-btn"

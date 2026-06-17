@@ -47,7 +47,7 @@ const products = [
     name: "LHOH King Bracelet",
     categories: ["accessories"],
     price: 30,
-    description: "Adjustable bracelet with LHOH logo",
+    description: "Premium Adjustable bracelet with LHOH logo",
     image: kingbraceletImg
   },
   {
@@ -55,7 +55,7 @@ const products = [
     name: "LHOH Queen Bracelet",
     categories: ["accessories"],
     price: 30,
-    description: "Eco-friendly bracelet for everyday use",
+    description: "Premium Eco-friendly bracelet for everyday use",
     image: queenbraceletImg,
     badge: "Eco-Friendly"
   },

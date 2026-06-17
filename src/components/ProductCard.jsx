@@ -20,9 +20,9 @@ const ProductCard = ({ product, addToCart, showSize = true }) => {
         <h3 className="product-name">{product.name}</h3>
         <p className="product-description">{product.description}</p>
         <div className="product-price">${product.price}</div>
-        <p className="size-note">
-      Shirts run small. Order a size up.
-    </p>
+        {product.name.includes("T-SHIRTS") && (
+  <p className="size-note">Shirts run small. Order a size up.</p>
+)}
 
         {/* Size Selector */}
         {showSize && (
@@ -42,7 +42,8 @@ const ProductCard = ({ product, addToCart, showSize = true }) => {
 
   </div>
 )}
-
+ 
+ {product.name !== "SHIPPING FEE" && (
         <div className="product-actions">
           <div className="quantity-selector">
             <button
@@ -68,6 +69,7 @@ const ProductCard = ({ product, addToCart, showSize = true }) => {
             {added ? "Added ✓" : "Add to Cart"}
           </button>
         </div>
+         )}
       </div>
     </div>
   );

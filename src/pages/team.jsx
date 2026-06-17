@@ -102,7 +102,7 @@ const Team = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Rebeccacrumbley@lhoh.org
+                Natashamoore@lhoh.org
               </a>
             </p>
             <p className="member-description">
